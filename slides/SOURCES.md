@@ -3,18 +3,18 @@
 The build walkthrough is authored teaching material. It illustrates how to reproduce
 the workflow; it does not pretend to be a transcript of the historical build.
 
-- Slides 6–8 and optional slides 34–43: the completed branch’s
+- Slides 10–12 and optional slides 38–47: the completed branch’s
   [coach guide](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/README.md),
   [prompt](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/PROMPT.md),
   [templates](https://github.com/doctor-ew/hackhers-2026/tree/reference/completed-coach/coach/templates),
   [worked example](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/examples/study-session.md),
   plus walkthrough/USE-THE-COACH.md and walkthrough/HACKATHON-PLAYBOOK.md.
-- Slide 7: exact excerpts from the input and output fields of the
+- Slide 11: exact excerpts from the input and output fields of the
   [recorded first turn](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/docs/coach-completion-20260909/live/laptop-20260909/conversation-opus-complete-experiment/turn-01.json).
   The full response contains additional context; the slide labels the excerpts.
-- Slides 8, 36, 38, and 42 summarize the recorded synthetic worked example above.
+- Slides 12, 40, 42, and 46 summarize the recorded synthetic worked example above.
   No actual interviews or experiment results are claimed.
-- Slides 9–30: ../starter/BUILD-BRIEF.md and ../starter/BUILD-STEPS.md, grounded in the
+- Slides 13–34: ../starter/BUILD-BRIEF.md and ../starter/BUILD-STEPS.md, grounded in the
   [original behavior spec](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/docs/AGENT-SPEC.md)
   and [evaluation cases](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/eval/evaluation-cases.md).
   Reference artifacts illustrate the target; checkpoints require student-built artifacts.
@@ -32,9 +32,28 @@ The original behavior spec's account setup predates the organizer's sponsored AP
 arrangement. Current teaching instructions use the organizer's API access; no old
 subscription-only shell setup is copied into the student flow.
 
+## API credits onboarding
+
+Slides 4–7 are the organizer’s sponsored-access walkthrough, adapted on
+September 17, 2026 from the organizer’s existing slides (API Credits.pptx). The
+QR code on slide 4 is the event offer code supplied by the organizer on
+September 17, 2026; it decodes to
+https://platform.claude.com/offers/2239eaf0-dbc5-49ed-b6b7-1f1fe14ea78e , an
+Anthropic API credits offer page, and the slide links to the same URL. Slides 5–7
+show the organizer’s own screenshots of an earlier Anthropic credits application
+form, the Claude Console dashboard (platform.claude.com/dashboard), and the
+Claude Code `/login` prompt. Balances, names, event titles, and dates in those
+screenshots belong to the organizer’s account and earlier events; they are not
+claims about student accounts or this event’s deadline. Claim rules stated on
+slides 4–6 (API only, not Claude.ai; Console Organization ID required and a
+Claude.ai user ID rejected; one claim per person; link expiration shown on the
+offer page; credits issued within minutes) were supplied by the organizer on
+September 17, 2026. Login option wording follows the Claude Code prompt in the
+screenshot.
+
 ## Engineering principles and workflow scope
 
-Slides 16–19 use the following primary sources. Scheduling, validation, booking,
+Slides 20–23 use the following primary sources. Scheduling, validation, booking,
 and operation-count examples are authored teaching illustrations, not claims
 about implemented coach behavior.
 
@@ -44,24 +63,24 @@ about implemented coach behavior.
 - ACID: [IBM transaction properties](https://www.ibm.com/docs/en/iis/11.7.0?topic=transactions-transaction-properties).
 - Big O: [Carnegie Mellon machine learning primer](https://www.cs.cmu.edu/~mgormley/courses/ml-primer/bigO.html).
 
-Slide 31 summarizes the official BMAD, gstack, and Nightshift repositories linked above.
+Slide 35 summarizes the official BMAD, gstack, and Nightshift repositories linked above.
 Omitting their setup is a workshop scope decision. The slide does not assert that
 any of these tools lacks engineering principles, review, testing, or evidence features.
 Sources accessed September 16, 2026.
 
 ## Copilot and autopilot
 
-Slide 4 adapts the copilot/autopilot comparison in a LinkedIn post attributed to
+Slide 8 adapts the copilot/autopilot comparison in a LinkedIn post attributed to
 Chorouk Malmoum in the screenshot supplied by the workshop organizer on
 September 16, 2026. The screenshot is the source available for this attribution;
 a permalink and publication date were not supplied. The original screenshot is
-bundled at public/assets/copilot-autopilot-post.png and opens from slide 4. The slide paraphrases the
+bundled at public/assets/copilot-autopilot-post.png and opens from slide 8. The slide paraphrases the
 idea and adds workshop questions. It does not present the post as empirical
 research or imply that autonomous execution is inherently undesirable.
 
 ## Checkpoints
 
-Slides 14, 21, 24, and 30 are authored build activities: prepare a fresh project,
+Slides 18, 25, 28, and 34 are authored build activities: prepare a fresh project,
 approve a testable spec, implement a coach, and test that student implementation.
 Commands follow [Claude Code quickstart](https://code.claude.com/docs/en/quickstart),
 accessed September 16, 2026. Build deliverables follow ../starter/BUILD-BRIEF.md.
